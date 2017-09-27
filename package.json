@@ -1,0 +1,14 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node start"
+  },
+  "dependencies": {
+    "express": "^4.15.5",
+    "mysql": "^2.14.1",
+    "nodemon": "^1.12.1",
+    "socket.io": "^2.0.3"
+  }
+}
