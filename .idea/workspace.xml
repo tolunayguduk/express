@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fe4604aa-ce35-4daa-8a77-3a40c39d5fcd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/chat.html" afterPath="$PROJECT_DIR$/public/chat.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -206,12 +204,20 @@
       <workItem from="1506544592967" duration="10000" />
       <workItem from="1506553402208" duration="441000" />
       <workItem from="1506627103334" duration="7431000" />
-      <workItem from="1506635152634" duration="685000" />
+      <workItem from="1506635152634" duration="806000" />
     </task>
+    <task id="LOCAL-00001" summary="düzenlemeler">
+      <created>1506635863492</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1506635863492</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25269000" />
+    <option name="totallyTimeSpent" value="25390000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -241,6 +247,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="düzenlemeler" />
+    <option name="LAST_COMMIT_MESSAGE" value="düzenlemeler" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
