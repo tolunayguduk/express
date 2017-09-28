@@ -33,10 +33,14 @@ io.sockets.on('connection',function (socket) {
         var mesaj = json.mesaj;
         var user = json.user;
         var saat = new Date().getHours();
+        var dakika = new Date().getMinutes();
         if(saat < 10){
             saat = '0'+ saat;
         }
-        var dakika = new Date().getMinutes();
+        if(dakika < 10){
+            dakika = '0'+ dakika;
+        }
+
         var veri = {
             'mesaj' : mesaj,
             'user' : user,
