@@ -1,5 +1,7 @@
 var express = require('express');
 var path = require('path');
+var mysql = require('mysql');
+var database = require('./routes/database.js');
 var users = require('./routes/users');
 var app = express();
 app.use('/img',express.static(__dirname + '/public/img'));
@@ -31,8 +33,10 @@ io.sockets.on('connection',function (socket) {
         var mesaj = json.mesaj;
         var user = json.user;
         var saat = new Date().getHours();
+        if(saat < 10){
+            saat = '0'+ saat;
+        }
         var dakika = new Date().getMinutes();
-        console.log(saat);
         var veri = {
             'mesaj' : mesaj,
             'user' : user,
@@ -40,6 +44,13 @@ io.sockets.on('connection',function (socket) {
             'dakika' : dakika
 
         }
+
+        var tarih = saat+':'+dakika;
+
+        database.query('INSERT INTO users(name,surname,email) values(?,?,now())',[user,mesaj],function (err,data) {
+
+        });
+
        io.emit('alici',veri);
     });
 });

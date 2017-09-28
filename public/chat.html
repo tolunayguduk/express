@@ -33,7 +33,7 @@
                }
            });
            socket.on("alici",function (data) {
-               $('#mesajlar').append('<div class="row message-bubble"><p class="text-muted">'+ data.user +'</p><p>'+data.mesaj+'</p><p>'+data.saat+':'+data.dakika+'</p></div>');
+               $('#mesajlar').append('<div class="row message-bubble"><span class="text-muted">'+ data.user +':</span><span>'+data.mesaj+'</span><span>'+data.saat+':'+data.dakika+'</span></div>');
            });
        });
     </script>
@@ -43,13 +43,10 @@
         <div class="container">
             <div class="row">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Panel heading without title</div>
+                    <div class="panel-heading">CHAT PANEL</div>
                     <div class="panel-body">
                         <div class="container" id="mesajlar">
-                            <div class="row message-bubble">
-                                <p class="text-muted">Matt Townsen</p>
-                                <span>Why is yo shit so broke?</span>
-                            </div>
+
 
 
                         </div>
