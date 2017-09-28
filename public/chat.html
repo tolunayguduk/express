@@ -10,7 +10,10 @@
     <script>
         var socket = io.connect();
         isim =  prompt("Adınız : ");
-        socket.emit("gonder",isim);
+
+        if(isim != ''){
+            socket.emit("gonder",isim);
+        }
 
         socket.on("alici",function (data) {
             alert(data + " adlı kişi online...");
